@@ -24,7 +24,10 @@ h2{
     text-transform: uppercase;
     font-size: 22px;
     
-   
+    @media (min-width:600px){
+        font-size: 30px;
+    }
+      
 }
 
 nav{
@@ -34,6 +37,9 @@ nav{
     opacity: 33%;
     padding-top: 2%;
     
+    @media(min-width:530px){
+        height: 15vh;
+    }
     
     ul{
         li{
@@ -42,6 +48,11 @@ nav{
             font-weight: 500;
             color:@black2;
             padding-bottom: 3%;
+            
+            @media (min-width: 530px){
+                display: inline;
+                padding-right: 2%;
+            }
             
            }
         
@@ -52,6 +63,10 @@ header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner-bg.png);
     height: 25vh;
     margin-bottom: 10%;
+    
+     @media (min-width:600px){
+        height: 45vh;
+    }
     
     .logo{
         width: 25%;
@@ -79,6 +94,11 @@ button{
     margin:auto;
     margin-bottom: 10%;
     font-weight: 500; 
+    
+    @media (min-width:843px){
+        margin-bottom: 10%;
+    }
+
 }
 
 .header-button{
@@ -114,6 +134,12 @@ section{
 #grey-background, #grey-background2{
     background-color: @gray;
     padding-top: 5%; 
+    
+    @media (min-width:1200px){
+    border-bottom: @yellow 10px solid;
+    margin-bottom: 1px;
+    }
+
 } 
 
 span{
@@ -121,11 +147,18 @@ span{
 }
 
 #hide1{
-   
+   @media (min-width:768px){
+     display: none;   
+    }
+
 }
 
 #hide2{
     display: none;
+    
+    @media (min-width:768px){
+     display: block;   
+    }
   
 }
 
